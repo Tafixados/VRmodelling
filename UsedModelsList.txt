@@ -1,0 +1,3 @@
+Radiator free model from https://www.turbosquid.com/Search/3D-Models/free/radiator
+
+room walls, doors, windows, outlets, etc. modeled by myself in blender (seems like texture assets import poorly)
