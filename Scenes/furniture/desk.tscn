@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Model_imports/office/desk/desk.glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.98626, 1.80919, 1.49008 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 2.25208, 0.0615113, 4.79779 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 2.05449, 1.82355, 0.0746392 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.0606014, 1, 4.00407 )
+
+[node name="Desk" type="Spatial"]
+
+[node name="desk" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.03002, 0, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="desk"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03002, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="desk/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23069, 1.86817, -3.51441 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="desk/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.220731, 3.70035, -0.417736 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="desk/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.237143, 1.79084, 4.11243 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="desk/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.18283, 2.75493, 0.178422 )
+shape = SubResource( 4 )

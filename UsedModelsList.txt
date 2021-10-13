@@ -1,3 +1,4 @@
-Radiator free model from https://www.turbosquid.com/Search/3D-Models/free/radiator
-
-room walls, doors, windows, outlets, etc. modeled by myself in blender (seems like texture assets import poorly)
+Office assets https://free3d.com/3d-model/--147007.html
+Radiator www.turbosquid.com/Search/3D-Models/free/radiator
+room walls, doors, windows, outlets, etc. modeled in blender
+(apparently texture assets import poorly when using UV wrapping/editing, and transparent materials don't get imported)
