@@ -47,11 +47,15 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("jump") and (is_on_floor() or ground_check.is_colliding()):
 		gravity_vec = Vector3.UP * jump
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 	if Input.is_action_pressed("crouch"):
 		scale.y = 0.5
 	else:
 		scale.y = 1
+	
+	if Input.is_action_pressed("pause"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	if Input.is_action_pressed("move_forward"):
 		direction -= transform.basis.z
